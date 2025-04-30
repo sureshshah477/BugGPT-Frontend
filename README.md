@@ -1,12 +1,64 @@
-# React + Vite
+# 🐞 BugGPT - Smart Code Debugging Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BugGPT is a smart multi-language code analysis assistant that automatically detects and reviews your code for errors, bugs, and improvements using **Google Gemini Flash 2.0** API.
 
-Currently, two official plugins are available:
+No need to select a language — just paste your code, click **Review**, and get helpful insights instantly. It's built for developers, students, and coders who want a quick and intelligent debugging assistant.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 [Live Demo](https://bug-gpt-front-git-main-suresh-shahs-projects.vercel.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Features
+
+- 🔍 **Automatic Language Detection** (No manual selection)
+- 🧠 **AI-Powered Review** using Gemini Flash 2.0 by Google
+- ⚡ **Instant Feedback** on syntax issues, logical errors, and suggestions
+- 💻 Paste any code (C, C++, Python, Java, etc.)
+- 🖼️ Clean and responsive UI (React + TailwindCSS)
+- 🌐 Fully deployed on **Vercel**
+
+---
+
+## ⚙️ Tech Stack
+
+| Area        | Technology              |
+|-------------|--------------------------|
+| Frontend    | React.js, TailwindCSS    |
+| Backend     | Node.js, Express.js      |
+| AI Model    | Gemini Flash 2.0 API     |
+| Deployment  | Vercel                   |
+
+---
+
+## 🧠 How It Works
+
+1. Paste your code into the editor.
+2. Click the **Review** button.
+3. The app automatically detects the language.
+4. The code is sent to the backend, which calls the Gemini Flash 2.0 API.
+5. The response includes:
+   - 🐛 Detected Errors
+   - 🛠️ Suggestions
+   - 🔁 Improved Code (if applicable)
+
+---
+
+---
+
+## 🚀 Local Setup Instructions
+
+> Make sure Node.js and npm are installed.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/BugGPT.git
+cd BugGPT
+cd backend
+npm install
+# Add your GEMINI_API_KEY in a .env file
+npm start
+cd frontend
+npm install
+npm run dev
+
